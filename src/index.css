@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cedarville+Cursive&family=Racing+Sans+One&display=swap');
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.font-container {
+    font-family: 'Allura', cursive;
+}
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.reveal .parent{
+  display:flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+
+}
+.reveal .parent .child{
+    display: block;
+   
+}
+.reveal{
+
+}
+
+.child span{
+    display: inline-block;
+}
+
+.topheading h5{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
